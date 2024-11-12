@@ -1,0 +1,6 @@
+main {
+  margin-top: .5625rem;
+  margin-inline: auto;
+  width: min(100%, 24.375rem);
+  padding-inline: 1.25rem;
+}

@@ -1,3 +1,7 @@
 @import url('global.css');
 @import url('header.css');
+@import url('main.css');
 @import url('date-appointments.css');
+@import url('morning-appointments.css');
+@import url('afternoon-appointments.css');
+@import url('night-appointments.css');
