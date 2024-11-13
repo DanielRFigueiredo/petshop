@@ -1,0 +1,23 @@
+footer {
+  padding: 1.125rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-tertiary);
+  border: 1px solid var(--background-tertiary, #23242C);
+
+  margin-top: 2.75rem;
+
+}
+
+@media (width >=768px) {
+  footer {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 0;
+
+  }
+  
+}
