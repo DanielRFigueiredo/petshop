@@ -29,14 +29,71 @@
           Aqui você pode ver todos os clientes e serviços agendados para hoje.
         </p>
       </div>
-      <div class="input-wrapper">
+      <label class="input-wrapper">
         <img src="./assets/icons/calendar.svg" alt="calendário">
         <input type="date" id="date" name="date" required />
-      </div>
+        <img src="./assets/icons/arrow-down.svg" alt="arrow">
+      </label>
     </header>
-    <section id="morning-appointments"></section>
-    <section id="afternoon-appointments"></section>
-    <section id="night-appointments"></section>
+    <section class="card" id="morning-appointments">
+      <header>
+        <img src="./assets/icons/sun-fog.svg" alt="morning">
+        <h2>Manhã</h2>
+        <span>09h-12h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">09:00</span>
+            <span class="data"><strong class="pet">Thor</strong> <span class="owner">/ Fernanda Costa</span></span>
+          </div>
+          <span>Vacinação</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+    <section class="card" id="afternoon-appointments">
+      <header>
+        <img src="./assets/icons/cloud-sun.svg" alt="morning">
+        <h2>Tarde</h2>
+        <span>13h-18h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">13:00</span>
+            <span class="data"><strong class="pet">Mel</strong> <span class="owner">/ João Souza</span></span>
+          </div>
+          <span>Corte de Unhas</span>
+          <button>Remover agendamento</button>
+        </li>
+        <li>
+          <div>
+            <span class="hour">14:00</span>
+            <span class="data"><strong class="pet">Bella</strong> <span class="owner">/ Pedro Martins</span></span>
+          </div>
+          <span>Aplicação de Anti-pulgas</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+    <section class="card" id="night-appointments">
+      <header>
+        <img src="./assets/icons/moon.svg" alt="morning">
+        <h2>Noite</h2>
+        <span>19h-21h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">20:00</span>
+            <span class="data"><strong class="pet">Max</strong> <span class="owner">/ Camila Santos</span></span>
+          </div>
+          <span>Limpeza de Dentes</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
 
   </main>
 

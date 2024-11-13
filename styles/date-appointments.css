@@ -1,0 +1,67 @@
+#date-appointments {
+  & h1 {
+    color: #f5f4f5;
+  }
+
+  & p {
+    margin-top: .25rem;
+    font: var(--text-md);
+    color: var(--content-secondary);
+  }
+
+  & .input-wrapper {
+
+    position: relative;
+
+    margin-top: .75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-primary, #3E3C41);
+    padding: .75rem;
+    width: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+
+
+
+    & input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+
+      color: var(--content-secondary, #98959D);
+      font: 400 1rem/1.5rem var(--ff-inter);
+
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      }
+    }
+
+    & img:last-child {
+      position: absolute;
+      right: .75rem;
+      z-index: -1;
+
+    }
+
+  }
+
+}
+
+@media (width >=768px) {
+  #date-appointments {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+
+    & .input-wrapper{
+      margin-top: 0;
+    }
+
+  }
+
+}

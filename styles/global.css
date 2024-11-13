@@ -60,11 +60,18 @@ body {
 
 }
 
-a {
+a, button {
   text-decoration: none;
   color: inherit;
-
+  cursor: pointer;
 }
 
+h1{
+  font: var(--title-base);
+}
+
+ul[role="list"] {
+  list-style: none;
+}
 
 @media (width >=768px) {}

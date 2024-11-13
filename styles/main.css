@@ -2,5 +2,15 @@ main {
   margin-top: .5625rem;
   margin-inline: auto;
   width: min(100%, 24.375rem);
-  padding-inline: 1.25rem;
+  padding: .75rem 1.25rem;
+}
+
+@media (width >=768px) {
+
+  main{
+    margin-top: .75rem;
+    width: min(100%, 47rem);
+    
+  }
+  
 }

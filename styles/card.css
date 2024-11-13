@@ -1,0 +1,127 @@
+.card {
+  background: var(--bg-tertiary);
+  border-radius: 10px;
+
+  &:first-of-type {
+    margin-top: 2rem;
+  }
+
+  & + .card {
+    margin-top: 1rem;
+  }
+
+  & header {
+    display: flex;
+    align-items: center;
+    padding: .75rem 1.25rem;
+
+    gap: .75rem;
+    border-bottom: 1px solid #2E2C30;
+
+    & h2 {
+      flex: 1;
+      font: var(--label-lg);
+    }
+
+    & span {
+      font: var(--label-lg);
+      color: var(--content-secondary);
+
+    }
+  }
+
+  & ul {
+    padding: 1.25rem;
+    display: grid;
+    gap: 1rem;
+
+    & li {
+      font: var(--text-md);
+      color: var(--content-secondary);
+      padding: .75rem;
+
+      border-bottom: 1px solid var(--border-divisor);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        & span:first-child,
+        & strong:first-child {
+          font: var(--label-md);
+          color: var(--content-primary);
+        }
+
+      }
+
+      & button {
+        margin-top: .5rem;
+        background-color: transparent;
+        border: none;
+        font: var(--text-sm);
+        color: var(--content-tertiary);
+        display: block;
+        margin-left: auto;
+
+
+        &:hover {
+          color: var(--content-primary, #FFF);
+          font: var(--link-base);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (width >=768px) {
+
+  .card {
+    & ul {
+      gap: .75rem;
+
+      & li {
+        font: var(--text-sm);
+        color: var(--content-secondary);
+
+        display: flex;
+        align-items: center;
+        padding-inline: .75rem;
+        gap: 1rem;
+
+        padding-block: 1rem;
+
+        & div {
+          flex: 5;
+
+          & span:first-child,
+          & strong:first-child {
+            font: var(--label-sm);
+            color: var(--content-primary);
+          }
+
+
+        }
+
+        &>span {
+          flex: 4;
+        }
+
+        &>button {
+          margin-top: 0;
+        }
+
+
+
+      }
+
+
+    }
+
+  }
+}
