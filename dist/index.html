@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento Petshop</title>
+
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+<script defer src="main.js"></script></head>
+
+<body>
+  <header id="header-page">
+    <div>
+      <img src="./assets/icons/logo.svg" alt="logo">
+    </div>
+  </header>
+  <main>
+    <header id="date-appointments">
+      <div>
+        <h1>Sua agenda</h1>
+        <p>
+          Aqui você pode ver todos os clientes e serviços agendados para hoje.
+        </p>
+      </div>
+      <label class="input-wrapper img-input-img">
+        <img src="./assets/icons/calendar.svg" alt="calendário">
+        <input type="date" id="date" name="date" required />
+        <img src="./assets/icons/arrow-down.svg" alt="arrow">
+      </label>
+    </header>
+    <section class="list" id="morning-appointments">
+      <header>
+        <img src="./assets/icons/sun-fog.svg" alt="morning">
+        <h2>Manhã</h2>
+        <span>09h-12h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">09:00</span>
+            <span class="data"><strong class="pet">Thor</strong> <span class="owner">/ Fernanda Costa</span></span>
+          </div>
+          <span>Vacinação</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+    <section class="list" id="afternoon-appointments">
+      <header>
+        <img src="./assets/icons/cloud-sun.svg" alt="morning">
+        <h2>Tarde</h2>
+        <span>13h-18h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">13:00</span>
+            <span class="data"><strong class="pet">Mel</strong> <span class="owner">/ João Souza</span></span>
+          </div>
+          <span>Corte de Unhas</span>
+          <button>Remover agendamento</button>
+        </li>
+        <li>
+          <div>
+            <span class="hour">14:00</span>
+            <span class="data"><strong class="pet">Bella</strong> <span class="owner">/ Pedro Martins</span></span>
+          </div>
+          <span>Aplicação de Anti-pulgas</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+    <section class="list" id="night-appointments">
+      <header>
+        <img src="./assets/icons/moon.svg" alt="morning">
+        <h2>Noite</h2>
+        <span>19h-21h</span>
+      </header>
+      <ul role="list">
+        <li>
+          <div>
+            <span class="hour">20:00</span>
+            <span class="data"><strong class="pet">Max</strong> <span class="owner">/ Camila Santos</span></span>
+          </div>
+          <span>Limpeza de Dentes</span>
+          <button>Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer>
+    <button class="btn hidden">
+      NOVO AGENDAMENTO
+    </button>
+  </footer>
+  <div class="modal ">
+    <div class="container-modal">
+      <header>
+        <h1>Agende um atendimento</h1>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      </header>
+      <form action="#">
+        <div class="input-wrapper">
+          <label for="user-name">Nome do tutor</label>
+          <label>
+            <img src="./assets/icons/user.svg" alt="user">
+            <input type="text" id="user-name" name="user-name" placeholder="Helena Souza" required />
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <label for="pet-name">Nome do pet</label>
+          <label>
+            <img src="./assets/icons/pet-paw.svg" alt="user">
+            <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar" required />
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Telefone</label>
+          <label>
+            <img src="./assets/icons/phone.svg" alt="user">
+            <input type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" required />
+          </label>
+        </div>
+
+        <div class="textarea-wrapper">
+          <label for="description">Descrição do serviço</label>
+          <textarea id="description" name="description" resize="none" placeholder="Banho e tosa" required></textarea>
+        </div>
+
+        <div>
+          <div class="input-wrapper img-input-img">
+            <label for="date">Data</label>
+            <label>
+              <img src="./assets/icons/calendar.svg" alt="calendário">
+              <input type="date" id="date" name="date" required />
+              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+            </label>
+          </div>
+          <div class="input-wrapper img-input-img">
+            <label for="time">Hora</label>
+            <label>
+              <img src="./assets/icons/clock-circle.svg" alt="calendário">
+              <input type="time" id="time" name="time" required />
+              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+            </label>
+          </div>
+
+        </div>
+        <button class="btn">AGENDAR</button>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
