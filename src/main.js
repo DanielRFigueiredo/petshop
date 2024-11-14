@@ -1,5 +1,9 @@
 'use strict';
 
+//import Libs
+import './libs/dayjs';
+
+//import CSS
 import './styles/global.css';
 import './styles/header.css';
 import './styles/main.css';
@@ -14,3 +18,6 @@ import './styles/./modal/index.css';
 import './styles/utility.css';
 import './styles/modal/index.css';
 import './styles/modal/input.css';
+
+//import js
+import './modules/modal/index.js';
