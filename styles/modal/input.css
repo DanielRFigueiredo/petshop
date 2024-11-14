@@ -1,0 +1,49 @@
+.modal {
+
+  & .input-wrapper {
+    display: grid;
+    gap: 4px;
+
+    & label:last-child {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-primary);
+
+      & input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+
+  & .textarea-wrapper {
+    display: grid;
+    gap: .25rem;
+
+
+    textarea {
+      width: 100%;
+      height: 5.125rem;
+      background-color: transparent;
+      border-radius: 8px;
+      border: 1px solid var(--border-primary);
+      padding: .75rem;
+
+
+      &:hover{
+        border: 1px solid var(--border-secondary, #86818C);
+      }
+
+      &:focus{
+        border: 1px solid var(--border-brand, #9282FA);
+      }
+    }
+  }
+
+
+
+}

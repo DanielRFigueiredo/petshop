@@ -1,0 +1,83 @@
+@import url(./input.css);
+
+.modal {
+  background: blur(10px);
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  padding: 4.75rem 1.25rem;
+  backdrop-filter: blur(5px);
+
+  & .container-modal {
+    border-radius: 12px;
+    background: var(--background-tertiary, #23242C);
+    padding: 2.5rem 1.25rem;
+    margin-inline: auto;
+    width: min(100%, 21.875rem);
+
+
+    & header {
+      & h1 {
+        font: var(--title-base);
+      }
+
+      & p {
+        font: var(--text-md);
+        color: var(--content-secondary);
+        margin-top: .25rem;
+      }
+    }
+  }
+
+
+  & form {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+    &>div:last-of-type {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+    }
+
+
+    &>button {
+      width: min-content;
+      margin-left: auto;
+      margin-top: .75rem;
+    }
+  }
+}
+
+@media (width >=768px) {
+  .modal {
+    & .container-modal {
+      width: min(100%, 30rem);
+    }
+
+
+
+    & form {
+
+      &>div:last-of-type {
+        flex-direction: row;
+
+        &>div {
+          flex: 1;
+        }
+
+      }
+
+
+    }
+  }
+
+
+
+
+
+}

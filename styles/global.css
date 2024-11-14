@@ -60,18 +60,66 @@ body {
 
 }
 
-a, button {
+a,
+button {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
-h1{
+h1 {
   font: var(--title-base);
 }
 
 ul[role="list"] {
   list-style: none;
+}
+
+.img-input-img {
+
+  position: relative;
+
+  & input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    z-index: 1;
+
+    color: var(--content-secondary, #98959D);
+    font: 400 1rem/1.5rem var(--ff-inter);
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+  }
+
+  & img:last-child {
+    position: absolute;
+    right: .75rem;
+
+  }
+
+}
+
+input,
+textarea {
+  color: var(--content-primary, #FFF);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  outline: none;
+}
+
+.modal .input-wrapper label:last-child:hover,
+.modal .input-wrapper  textarea:hover {
+  border: 1px solid var(--border-secondary, #86818C);
+}
+
+.input-wrapper label:last-child:has(input:focus) {
+  border: 1px solid var(--border-brand, #9282FA);
 }
 
 @media (width >=768px) {}

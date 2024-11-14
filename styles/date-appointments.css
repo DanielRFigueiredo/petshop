@@ -26,25 +26,7 @@
 
 
 
-    & input {
-      background-color: transparent;
-      border: none;
-      outline: none;
-
-      color: var(--content-secondary, #98959D);
-      font: 400 1rem/1.5rem var(--ff-inter);
-
-      &::-webkit-calendar-picker-indicator {
-        opacity: 0;
-      }
-    }
-
-    & img:last-child {
-      position: absolute;
-      right: .75rem;
-      z-index: -1;
-
-    }
+   
 
   }
 

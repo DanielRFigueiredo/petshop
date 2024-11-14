@@ -29,7 +29,7 @@
           Aqui você pode ver todos os clientes e serviços agendados para hoje.
         </p>
       </div>
-      <label class="input-wrapper">
+      <label class="input-wrapper img-input-img">
         <img src="./assets/icons/calendar.svg" alt="calendário">
         <input type="date" id="date" name="date" required />
         <img src="./assets/icons/arrow-down.svg" alt="arrow">
@@ -97,11 +97,68 @@
 
   </main>
   <footer>
-    <button class="btn">
+    <button class="btn hidden">
       NOVO AGENDAMENTO
     </button>
   </footer>
+  <div class="modal">
+    <div class="container-modal">
+      <header>
+        <h1>Agende um atendimento</h1>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      </header>
+      <form action="#">
+        <div class="input-wrapper">
+          <label for="user-name">Nome do tutor</label>
+          <label>
+            <img src="./assets/icons/user.svg" alt="user">
+            <input type="text" id="user-name" name="user-name" placeholder="Helena Souza" required />
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <label for="pet-name">Nome do pet</label>
+          <label>
+            <img src="./assets/icons/pet-paw.svg" alt="user">
+            <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar" required />
+          </label>
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Telefone</label>
+          <label>
+            <img src="./assets/icons/phone.svg" alt="user">
+            <input type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" required />
+          </label>
+        </div>
 
+        <div class="textarea-wrapper">
+          <label for="description">Descrição do serviço</label>
+          <textarea id="description" name="description" resize="none" placeholder="Banho e tosa" required></textarea>
+        </div>
+
+        <div>
+          <div class="input-wrapper img-input-img">
+            <label for="date">Data</label>
+            <label>
+              <img src="./assets/icons/calendar.svg" alt="calendário">
+              <input type="date" id="date" name="date" required />
+              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+            </label>
+          </div>
+          <div class="input-wrapper img-input-img">
+            <label for="time">Hora</label>
+            <label>
+              <img src="./assets/icons/clock-circle.svg" alt="calendário">
+              <input type="time" id="time" name="time" required />
+              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+            </label>
+          </div>
+
+        </div>
+        <button class="btn">AGENDAR</button>
+
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
