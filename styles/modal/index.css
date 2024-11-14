@@ -1,11 +1,14 @@
 @import url(./input.css);
 
 .modal {
-  background: blur(10px);
   z-index: 1;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 4.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, .3);
+  min-height: 100%;
   backdrop-filter: blur(5px);
 
   & .container-modal {
@@ -17,6 +20,7 @@
 
 
     & header {
+
       & h1 {
         font: var(--title-base);
       }
