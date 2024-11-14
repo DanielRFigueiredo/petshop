@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/header.css */ \"./src/styles/header.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_date_appointments_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/date-appointments.css */ \"./src/styles/date-appointments.css\");\n/* harmony import */ var _styles_list_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/list.css */ \"./src/styles/list.css\");\n/* harmony import */ var _styles_morning_appointments_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/morning-appointments.css */ \"./src/styles/morning-appointments.css\");\n/* harmony import */ var _styles_afternoon_appointments_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/afternoon-appointments.css */ \"./src/styles/afternoon-appointments.css\");\n/* harmony import */ var _styles_night_appointments_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/night-appointments.css */ \"./src/styles/night-appointments.css\");\n/* harmony import */ var _styles_button_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styles/button.css */ \"./src/styles/button.css\");\n/* harmony import */ var _styles_footer_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./styles/footer.css */ \"./src/styles/footer.css\");\n/* harmony import */ var _styles_modal_index_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/modal/index.css */ \"./src/styles/modal/index.css\");\n/* harmony import */ var _styles_utility_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./styles/utility.css */ \"./src/styles/utility.css\");\n/* harmony import */ var _styles_modal_input_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles/modal/input.css */ \"./src/styles/modal/input.css\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/afternoon-appointments.css":
 /*!*************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/afternoon-appointments.css ***!
@@ -347,16 +357,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 /***/ ((module) => {
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack:///./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/header.css */ \"./src/styles/header.css\");\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _styles_date_appointments_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/date-appointments.css */ \"./src/styles/date-appointments.css\");\n/* harmony import */ var _styles_list_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/list.css */ \"./src/styles/list.css\");\n/* harmony import */ var _styles_morning_appointments_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/morning-appointments.css */ \"./src/styles/morning-appointments.css\");\n/* harmony import */ var _styles_afternoon_appointments_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/afternoon-appointments.css */ \"./src/styles/afternoon-appointments.css\");\n/* harmony import */ var _styles_night_appointments_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/night-appointments.css */ \"./src/styles/night-appointments.css\");\n/* harmony import */ var _styles_button_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styles/button.css */ \"./src/styles/button.css\");\n/* harmony import */ var _styles_footer_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./styles/footer.css */ \"./src/styles/footer.css\");\n/* harmony import */ var _styles_modal_index_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/modal/index.css */ \"./src/styles/modal/index.css\");\n/* harmony import */ var _styles_utility_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./styles/utility.css */ \"./src/styles/utility.css\");\n/* harmony import */ var _styles_modal_input_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./styles/modal/input.css */ \"./src/styles/modal/input.css\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

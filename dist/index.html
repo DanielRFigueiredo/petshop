@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agendamento Petshop</title>
 
-  <link rel="stylesheet" href="./styles/index.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -18,7 +17,7 @@
 <body>
   <header id="header-page">
     <div>
-      <img src="./assets/icons/logo.svg" alt="logo">
+      <img src="./src/assets/icons/logo.svg" alt="logo">
     </div>
   </header>
   <main>
@@ -30,14 +29,14 @@
         </p>
       </div>
       <label class="input-wrapper img-input-img">
-        <img src="./assets/icons/calendar.svg" alt="calendário">
+        <img src="./src/assets/icons/calendar.svg" alt="calendário">
         <input type="date" id="date" name="date" required />
-        <img src="./assets/icons/arrow-down.svg" alt="arrow">
+        <img src="./src/assets/icons/arrow-down.svg" alt="arrow">
       </label>
     </header>
     <section class="list" id="morning-appointments">
       <header>
-        <img src="./assets/icons/sun-fog.svg" alt="morning">
+        <img src="./src/assets/icons/sun-fog.svg" alt="morning">
         <h2>Manhã</h2>
         <span>09h-12h</span>
       </header>
@@ -54,7 +53,7 @@
     </section>
     <section class="list" id="afternoon-appointments">
       <header>
-        <img src="./assets/icons/cloud-sun.svg" alt="morning">
+        <img src="./src/assets/icons/cloud-sun.svg" alt="morning">
         <h2>Tarde</h2>
         <span>13h-18h</span>
       </header>
@@ -79,7 +78,7 @@
     </section>
     <section class="list" id="night-appointments">
       <header>
-        <img src="./assets/icons/moon.svg" alt="morning">
+        <img src="./src/assets/icons/moon.svg" alt="morning">
         <h2>Noite</h2>
         <span>19h-21h</span>
       </header>
@@ -97,11 +96,11 @@
 
   </main>
   <footer>
-    <button class="btn hidden">
+    <button class="btn ">
       NOVO AGENDAMENTO
     </button>
   </footer>
-  <div class="modal ">
+  <div class="modal  hidden">
     <div class="container-modal">
       <header>
         <h1>Agende um atendimento</h1>
@@ -111,21 +110,21 @@
         <div class="input-wrapper">
           <label for="user-name">Nome do tutor</label>
           <label>
-            <img src="./assets/icons/user.svg" alt="user">
+            <img src="./src/assets/icons/user.svg" alt="user">
             <input type="text" id="user-name" name="user-name" placeholder="Helena Souza" required />
           </label>
         </div>
         <div class="input-wrapper">
           <label for="pet-name">Nome do pet</label>
           <label>
-            <img src="./assets/icons/pet-paw.svg" alt="user">
+            <img src="./src/assets/icons/pet-paw.svg" alt="user">
             <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar" required />
           </label>
         </div>
         <div class="input-wrapper">
           <label for="phone">Telefone</label>
           <label>
-            <img src="./assets/icons/phone.svg" alt="user">
+            <img src="./src/assets/icons/phone.svg" alt="user">
             <input type="tel" id="phone" name="phone" placeholder="(00) 0 0000-0000" required />
           </label>
         </div>
@@ -139,17 +138,17 @@
           <div class="input-wrapper img-input-img">
             <label for="date">Data</label>
             <label>
-              <img src="./assets/icons/calendar.svg" alt="calendário">
+              <img src="./src/assets/icons/calendar.svg" alt="calendário">
               <input type="date" id="date" name="date" required />
-              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+              <img src="./src/assets/icons/arrow-down.svg" alt="arrow">
             </label>
           </div>
           <div class="input-wrapper img-input-img">
             <label for="time">Hora</label>
             <label>
-              <img src="./assets/icons/clock-circle.svg" alt="calendário">
+              <img src="./src/assets/icons/clock-circle.svg" alt="calendário">
               <input type="time" id="time" name="time" required />
-              <img src="./assets/icons/arrow-down.svg" alt="arrow">
+              <img src="./src/assets/icons/arrow-down.svg" alt="arrow">
             </label>
           </div>
 
