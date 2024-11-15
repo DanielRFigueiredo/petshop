@@ -21,3 +21,8 @@ import './styles/modal/input.css';
 
 //import js
 import './modules/modal/index.js';
+import './modules/page-load.js';
+import './modules/page/change-date.js';
+import './modules/form/submit.js';
+
+import './modules/schedules/delete.js'

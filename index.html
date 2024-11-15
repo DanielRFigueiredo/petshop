@@ -34,13 +34,16 @@
         <img src="./src/assets/icons/arrow-down.svg" alt="arrow">
       </label>
     </header>
-    <section class="list" id="morning-appointments">
+    <section class="list" >
       <header>
         <img src="./src/assets/icons/sun-fog.svg" alt="morning">
         <h2>Manhã</h2>
         <span>09h-12h</span>
       </header>
-      <ul role="list">
+      <ul role="list" id="morning-appointments">
+        <!-- 
+        
+        
         <li>
           <div>
             <span class="hour">09:00</span>
@@ -48,50 +51,31 @@
           </div>
           <span>Vacinação</span>
           <button>Remover agendamento</button>
-        </li>
+        </li> 
+
+
+
+        -->
       </ul>
     </section>
-    <section class="list" id="afternoon-appointments">
+    <section class="list" >
       <header>
         <img src="./src/assets/icons/cloud-sun.svg" alt="morning">
         <h2>Tarde</h2>
         <span>13h-18h</span>
       </header>
-      <ul role="list">
-        <li>
-          <div>
-            <span class="hour">13:00</span>
-            <span class="data"><strong class="pet">Mel</strong> <span class="owner">/ João Souza</span></span>
-          </div>
-          <span>Corte de Unhas</span>
-          <button>Remover agendamento</button>
-        </li>
-        <li>
-          <div>
-            <span class="hour">14:00</span>
-            <span class="data"><strong class="pet">Bella</strong> <span class="owner">/ Pedro Martins</span></span>
-          </div>
-          <span>Aplicação de Anti-pulgas</span>
-          <button>Remover agendamento</button>
-        </li>
+      <ul role="list" id="afternoon-appointments">
+       
       </ul>
     </section>
-    <section class="list" id="night-appointments">
+    <section class="list" >
       <header>
         <img src="./src/assets/icons/moon.svg" alt="morning">
         <h2>Noite</h2>
         <span>19h-21h</span>
       </header>
-      <ul role="list">
-        <li>
-          <div>
-            <span class="hour">20:00</span>
-            <span class="data"><strong class="pet">Max</strong> <span class="owner">/ Camila Santos</span></span>
-          </div>
-          <span>Limpeza de Dentes</span>
-          <button>Remover agendamento</button>
-        </li>
-      </ul>
+      <ul role="list" id="night-appointments">
+          </ul>
     </section>
 
   </main>
@@ -136,10 +120,10 @@
 
         <div>
           <div class="input-wrapper img-input-img">
-            <label for="date">Data</label>
+            <label for="date-new">Data</label>
             <label>
               <img src="./src/assets/icons/calendar.svg" alt="calendário">
-              <input type="date" id="date" name="date" required />
+              <input type="date" id="date-new" name="date-new" required />
               <img src="./src/assets/icons/arrow-down.svg" alt="arrow">
             </label>
           </div>

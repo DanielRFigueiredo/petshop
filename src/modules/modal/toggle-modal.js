@@ -1,4 +1,4 @@
-import { btnNew, modal } from './elements.js'
+import { btnNew, modal } from '../elements.js'
 
 btnNew.onclick = (event) => {
   modal.classList.toggle('hidden')
